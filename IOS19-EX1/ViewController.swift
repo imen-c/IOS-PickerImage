@@ -11,6 +11,7 @@ import Photos // pas necessaire pour le imagepicker
 class ViewController: UIViewController{
 
     @IBOutlet weak var resultat: UIImageView!
+  
     let imagePicker = UIImagePickerController()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +29,14 @@ class ViewController: UIViewController{
 
 extension ViewController : UIImagePickerControllerDelegate& UINavigationControllerDelegate{
     
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-         let uiimage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
+        guard let uiimage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage else {
+            fatalError("pas d'image dispo")
+        }
         
         self.resultat.image = uiimage
         picker.dismiss(animated: true)
-        
         
     }
     

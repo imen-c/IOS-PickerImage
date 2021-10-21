@@ -25,18 +25,21 @@
                                     <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gmd-O4-Vkp"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TN0-BD-Fvu">
-                                <rect key="frame" x="87" y="128" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TN0-BD-Fvu">
+                                <rect key="frame" x="0.0" y="44" width="414" height="308"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="TN0-BD-Fvu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3jV-9u-E7X"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nF2-tq-HqH" secondAttribute="trailing" constant="52" id="90V-NK-v2I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TN0-BD-Fvu" secondAttribute="trailing" id="VQP-aU-qyL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nF2-tq-HqH" secondAttribute="bottom" constant="49" id="XFq-rf-Wau"/>
                             <constraint firstItem="nF2-tq-HqH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="658" id="bdm-vm-KaF"/>
+                            <constraint firstItem="TN0-BD-Fvu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cDv-LV-cJT"/>
                             <constraint firstItem="nF2-tq-HqH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="223" id="g74-Ta-9GW"/>
+                            <constraint firstItem="nF2-tq-HqH" firstAttribute="top" secondItem="TN0-BD-Fvu" secondAttribute="bottom" constant="350" id="kjr-gA-2j6"/>
                         </constraints>
                     </view>
                     <connections>
